@@ -1,0 +1,132 @@
+/* General styles for the page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f4f1de; /* Light beige background */
+    color: #3d405b; /* Dark blue-gray text */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #a58861; /* Light brown heading color */
+}
+
+/* Styles for the book list container */
+.book-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly smaller minimum width */
+    gap: 25px; /* Increased spacing */
+}
+
+/* Styles for individual book items */
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f8f8; /* Off-white background */
+    border: 1px solid #a3b18a; /* Olive green border */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Slightly stronger shadow */
+    text-align: center;
+    position: relative;
+}
+
+.book-image {
+    width: 90px; /* Slightly larger image */
+    height: 90px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.book-item h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    color: #3d405b;
+}
+
+.book-item p {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #5f647b; /* Slightly darker gray */
+}
+
+/* Styles for the borrow button */
+.borrow-button {
+    background-color: #81b29a; /* Soft green button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px; /* Adjusted padding */
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.borrow-button:hover {
+    background-color: #61892f; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scale up on hover */
+}
+
+/* Styles for user details section */
+.userdetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 12px; /* More rounded */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px; /* Increased padding */
+    background-color: rgba(229, 211, 189, 0.7); /* Light brown with transparency */
+    border: 1px solid #a58861; /* Light brown border */
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12); /* More pronounced shadow */
+}
+
+/* Styles for unordered list in user details */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for details within user details */
+.details {
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for buttons */
+button {
+    background-color: #f2e7d5; /* Light tan button background */
+    color: #3d405b; /* Dark blue-gray button text */
+    padding: 18px 30px; /* Increased padding */
+    border: 1px solid #a3b18a; /* Olive green border */
+    border-radius: 10px; /* More rounded */
+    cursor: pointer;
+    font-size: 17px; /* Slightly larger font */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #946846; /* Darker light brown on hover */
+    color: white;
+    transform: translateY(-2px); /* More pronounced lift */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+}

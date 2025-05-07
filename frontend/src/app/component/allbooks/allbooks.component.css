@@ -1,0 +1,55 @@
+.book-list {
+  margin-top: 20px;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create columns that adjust based on content and screen size, minimum width of 300px */
+  gap: 20px; /* Add some spacing between grid items */
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: #f4e6d8; /* Light brown background for items */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-align: center; /* Center text within the book item */
+  position: relative; /* To position the delete icon */
+}
+
+.book-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.book-item h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.book-item p {
+  margin-bottom: 3px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.borrow-button {
+  background-color: #007bff; /* Primary blue color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.borrow-button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}

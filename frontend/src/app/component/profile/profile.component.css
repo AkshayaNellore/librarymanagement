@@ -1,0 +1,124 @@
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 30px auto; /* Increased top margin for separation */
+  padding: 30px;
+  border: 1px solid #795548; /* Medium Brown border */
+  border-radius: 10px;
+  background-color: #f4e6d8; /* Light brown background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #543d3d; /* Darker Brown label text */
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #795548; /* Medium Brown border */
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.85); /* Less transparent white input */
+  color: #333; /* Darker Gray input text */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #4e342e; /* Even Darker Brown focus border */
+  box-shadow: 0 0 8px rgba(78, 52, 46, 0.2);
+  outline: none;
+}
+
+button[type="submit"],
+button[routerLink="/home"] {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #543d3d; /* Darker Brown button */
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 3px 8px rgba(84, 61, 61, 0.4);
+}
+
+button[routerLink="/home"] {
+  background-color: #795548; /* Medium Brown for the "Back" button */
+}
+
+button[type="submit"]:hover,
+button[routerLink="/home"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+button[type="submit"]:hover {
+  background-color: #4e342e; /* Even Darker Brown on hover */
+}
+
+button[routerLink="/home"]:hover {
+  background-color: #543d3d; /* Darker Medium Brown on hover */
+}
+
+/* Message */
+.message {
+  margin-top: 25px;
+  padding: 15px;
+  border: 1px solid #a1887f; /* Light Brown border for success */
+  border-radius: 8px;
+  background-color: #f2e7d5; /* Light Tan background for success */
+  color: #543d3d; /* Darker Brown text for success */
+}
+
+/* Pop-up Styling (Green and White Theme) */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+}
+
+.modal-content {
+  background-color: #ffffff; /* White modal background */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid #81c784; /* Green modal border */
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #388e3c; /* Green close button */
+}
+
+.close:hover {
+  color: #2e7d32; /* Darker green on hover */
+}
+
+.success-icon {
+  font-size: 60px;
+  color: #388e3c; /* Green success icon */
+  margin-bottom: 25px;
+}

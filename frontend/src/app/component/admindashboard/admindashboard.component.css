@@ -1,0 +1,171 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f4f1de, #e0cba8); /* Light beige to a warmer beige */
+    color: #3d405b; /* Dark blue-gray text */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #795548, #a1887f); /* Medium brown to light brown */
+    color: #f9f8f8; /* Off-white text */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: -20px; 
+    width: calc(100% + 40px);
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+.logo img {
+    height: 55px; /* Slightly smaller logo */
+}
+
+.navbarlogo {
+    height: 55px;
+    width: auto;
+}
+
+.site-name {
+    margin-right: 40px; /* Increased space between the site name and user info */
+}
+
+.site-name h1 {
+    margin: 0;
+    font-size: 26px; /* Slightly smaller site name */
+    letter-spacing: 0.3px;
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.notification button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px; /* Less right margin */
+    transition: transform 0.2s ease-in-out;
+}
+
+.notification button:hover {
+    transform: scale(1.05);
+}
+
+.notification img {
+    height: 26px; /* Slightly smaller icon */
+    filter: brightness(0) invert(1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: #d7ccc8; /* Light grayish-brown */
+    font-weight: 500;
+    font-size: 0.95rem; /* Slightly smaller user info */
+}
+
+#logout-btn {
+    background-color: #d32f2f;
+    color: #f9f8f8;
+    border: none;
+    padding: 8px 16px; /* Smaller padding */
+    cursor: pointer;
+    border-radius: 6px; /* More rounded */
+    margin-left: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    font-size: 0.9rem; /* Smaller font */
+}
+
+#logout-btn:hover {
+    background-color: #b71c1c;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+    width: 220px; /* Slightly narrower sidebar */
+    background: linear-gradient(to bottom, #a1887f, #795548); /* Light brown to medium brown */
+    padding: 15px; /* Less padding */
+    position: fixed;
+    top: 65px; /* Adjusted top position */
+    bottom: 40px;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+}
+
+.sidebar ul li {
+    padding: 12px 8px; /* Smaller padding */
+    margin: 8px 0; /* Smaller margin */
+    border-radius: 6px; /* More rounded */
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.sidebar ul li:hover {
+    cursor: pointer;
+    background-color: #543d3d; /* Darker brown on hover */
+    transform: translateX(3px);
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #f9f8f8;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.9rem; /* Smaller font */
+}
+
+.sidebar ul li:hover a {
+    color: #fff;
+}
+
+.sidebar ul li a img {
+    height: 24px; /* Smaller icon */
+    margin-right: 10px; /* Less right margin */
+   /* filter: brightness(0) invert(1) grayscale(0) contrast(100%); /* Ensures white icons */
+}
+
+main {
+    margin-left: 240px; /* Adjusted left margin */
+    padding: 20px; /* Less padding */
+    flex: 1;
+    margin-top: 65px; /* Adjusted top margin */
+    padding-bottom: 50px; /* Adjusted bottom padding */
+    background-color: #f4f1de; /* Light beige background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background: linear-gradient(to right, #a1887f, #795548); /* Light brown to medium brown */
+    color: #f9f8f8;
+    text-align: center;
+    padding: 12px 0; /* Smaller padding */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem; /* Smaller font */
+}

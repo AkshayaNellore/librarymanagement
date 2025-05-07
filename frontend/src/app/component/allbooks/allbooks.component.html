@@ -1,0 +1,16 @@
+<div class="book-list">
+  <div class="book-item" *ngFor="let book of books">
+    <img src="/assets/images/librarybook.png" alt="{{ book.title }} cover" class="book-image">
+    <h4>{{ book.title }}</h4>
+    <p>Author: {{ book.author }}</p>
+    <p>Published: {{ book.yearPublished }}</p>
+    <p>Available Copies: {{ book.availableCopies }}</p>
+    <button class="borrow-button" (click)="confirmBorrow(book)" [disabled]="book.availableCopies === 0">
+      {{ book.availableCopies === 0 ? 'Out of Stock' : 'Borrow Book' }}
+    </button>
+  </div>
+</div>
+
+<div *ngIf="borrowMessage" class="borrow-message">
+  {{ borrowMessage }}
+</div>
